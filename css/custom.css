@@ -1,0 +1,32 @@
+/* 限制折叠代码块的最大高度 */
+pre.code-block {
+    max-height: 400px;
+    overflow: hidden;
+    position: relative;
+    transition: max-height 0.3s ease-in-out;
+}
+
+/* 展开的代码块移除高度限制 */
+pre.code-block.expanded {
+    max-height: none;
+}
+
+/* 展开按钮的样式 */
+.toggle-button {
+    display: block;
+    cursor: pointer;
+    background-color: #ffffff;
+    border: 2px solid #ffffff; /* 增加边框并设置颜色 */
+    border-radius: 12px; /* 设置圆角半径 */
+    padding: 5px;
+    font-size: 14px;
+    margin: 10px 0;
+    text-align: center;
+    transition: background-color 0.3s ease; /* 添加过渡效果 */
+}
+
+.toggle-button:hover {
+    background-color: #42b983; /* 鼠标悬停时改变背景颜色 */
+}
+
+

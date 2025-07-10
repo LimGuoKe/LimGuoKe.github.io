@@ -1,0 +1,129 @@
+/* Here is your custom css styles. */
+
+/* 全局样式 */
+body {
+    background-color: #95a5a6;
+    margin: 0;
+    color: #34495e;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+
+/* 默认字体大小（针对桌面端或大屏幕） */
+header .brand-logo .logo-span {
+    font-size: 1.6rem; /* 桌面端字体大小 */
+}
+
+/* 媒体查询：当屏幕宽度小于或等于 992px 时（中等屏幕和更小），减小字体大小 */
+@media screen and (max-width: 992px) {
+    header .brand-logo .logo-span {
+        font-size: 1.3rem; /* 手机端或平板端稍小的字体大小 */
+        /* 你可以根据需要调整这个值，例如 1.2rem, 1.1rem 等 */
+    }
+}
+
+/* （可选）如果还需要更小的手机字体大小，可以再加一个媒体查询，例如针对 600px 以下的屏幕 */
+@media screen and (max-width: 600px) { /* Materialize CSS 的 small 断点 */
+    header .brand-logo .logo-span {
+        font-size: 1.1rem; /* 针对更小手机屏幕的字体大小 */
+    }
+}
+
+
+/* 公告栏 */
+.index-card .card .card-content {
+    padding: 20px 40px;
+    background-color: #fff;
+}
+
+/* 文章详情卡片 */
+#artDetail .card {
+    box-shadow: 0 10px 35px 2px rgba(0, 0, 0, .15),
+    0 5px 15px rgba(0, 0, 0, .07),
+    0 2px 5px -5px rgba(0, 0, 0, .1) !important;
+    background-color: #CCE8CF;
+}
+
+/* 首页颜色变换 */
+@-webkit-keyframes rainbow {
+    0%,
+    100% {
+        background: rgba(7, 152, 199, 0.75);
+        background: linear-gradient(45deg, rgba(7, 152, 199, 0.75) 0%, rgba(7, 152, 199, 0.65) 100%);
+        background: -moz-linear-gradient(135deg, rgba(7, 152, 199, 0.75) 0%, rgba(7, 152, 199, 0.65) 100%);
+        background: -webkit-linear-gradient(135deg, rgba(7, 152, 199, 0.75) 0%, rgba(7, 152, 199, 0.65) 100%);
+    }
+    16% {
+        background: rgba(9, 142, 196, 0.75);
+        background: linear-gradient(45deg, rgba(9, 142, 196, 0.75) 0%, rgba(9, 142, 196, 0.65) 100%);
+        background: -moz-linear-gradient(135deg, rgba(9, 142, 196, 0.75) 0%, rgba(9, 142, 196, 0.65) 100%);
+        background: -webkit-linear-gradient(135deg, rgba(9, 142, 196, 0.75) 0%, rgba(9, 142, 196, 0.65) 100%);
+    }
+    32% {
+        background: rgba(121, 188, 231, 0.75);
+        background: linear-gradient(45deg, rgba(121, 188, 231, 0.75) 0%, rgba(121, 188, 231, 0.65) 100%);
+        background: -moz-linear-gradient(135deg, rgba(121, 188, 231, 0.75) 0%, rgba(121, 188, 231, 0.65) 100%);
+        background: -webkit-linear-gradient(135deg, rgba(121, 188, 231, 0.75) 0%, rgba(121, 188, 231, 0.65) 100%);
+    }
+    48% {
+        background: rgba(129, 205, 193, 0.75);
+        background: linear-gradient(45deg, rgba(129, 205, 193, 0.75) 0%, rgba(129, 205, 193, 0.65) 100%);
+        background: -moz-linear-gradient(135deg, rgba(129, 205, 193, 0.75) 0%, rgba(129, 205, 193, 0.65) 100%);
+        background: -webkit-linear-gradient(135deg, rgba(129, 205, 193, 0.75) 0%, rgba(129, 205, 193, 0.65) 100%);
+    }
+    64% {
+        background: rgba(95, 192, 167, 0.75);
+        background: linear-gradient(45deg, rgba(95, 192, 167, 0.75) 0%, rgba(95, 192, 167, 0.65) 100%);
+        background: -moz-linear-gradient(135deg, rgba(95, 192, 167, 0.75) 0%, rgba(95, 192, 167, 0.65) 100%);
+        background: -webkit-linear-gradient(135deg, rgba(95, 192, 167, 0.75) 0%, rgba(95, 192, 167, 0.65) 100%);
+    }
+    80% {
+        background: rgba(77, 199, 236, 0.75);
+        background: linear-gradient(45deg, rgba(77, 199, 236, 0.75) 0%, rgba(77, 199, 236, 0.65) 100%);
+        background: -moz-linear-gradient(135deg, rgba(77, 199, 236, 0.75) 0%, rgba(77, 199, 236, 0.65) 100%);
+        background: -webkit-linear-gradient(135deg, rgba(77, 199, 236, 0.75) 0%, rgba(77, 199, 236, 0.65) 100%);
+    }
+}
+
+@keyframes rainbow {
+    0%,
+    100% {
+        background: rgba(7, 152, 199, 0.75);
+        background: linear-gradient(45deg, rgba(7, 152, 199, 0.75) 0%, rgba(7, 152, 199, 0.65) 100%);
+        background: -moz-linear-gradient(135deg, rgba(7, 152, 199, 0.75) 0%, rgba(7, 152, 199, 0.65) 100%);
+        background: -webkit-linear-gradient(135deg, rgba(7, 152, 199, 0.75) 0%, rgba(7, 152, 199, 0.65) 100%);
+    }
+    16% {
+        background: rgba(9, 142, 196, 0.75);
+        background: linear-gradient(45deg, rgba(9, 142, 196, 0.75) 0%, rgba(9, 142, 196, 0.65) 100%);
+        background: -moz-linear-gradient(135deg, rgba(9, 142, 196, 0.75) 0%, rgba(9, 142, 196, 0.65) 100%);
+        background: -webkit-linear-gradient(135deg, rgba(9, 142, 196, 0.75) 0%, rgba(9, 142, 196, 0.65) 100%);
+    }
+    32% {
+        background: rgba(121, 188, 231, 0.75);
+        background: linear-gradient(45deg, rgba(121, 188, 231, 0.75) 0%, rgba(121, 188, 231, 0.65) 100%);
+        background: -moz-linear-gradient(135deg, rgba(121, 188, 231, 0.75) 0%, rgba(121, 188, 231, 0.65) 100%);
+        background: -webkit-linear-gradient(135deg, rgba(121, 188, 231, 0.75) 0%, rgba(121, 188, 231, 0.65) 100%);
+    }
+    48% {
+        background: rgba(129, 205, 193, 0.75);
+        background: linear-gradient(45deg, rgba(129, 205, 193, 0.75) 0%, rgba(129, 205, 193, 0.65) 100%);
+        background: -moz-linear-gradient(135deg, rgba(129, 205, 193, 0.75) 0%, rgba(129, 205, 193, 0.65) 100%);
+        background: -webkit-linear-gradient(135deg, rgba(129, 205, 193, 0.75) 0%, rgba(129, 205, 193, 0.65) 100%);
+    }
+    64% {
+        background: rgba(95, 192, 167, 0.75);
+        background: linear-gradient(45deg, rgba(95, 192, 167, 0.75) 0%, rgba(95, 192, 167, 0.65) 100%);
+        background: -moz-linear-gradient(135deg, rgba(95, 192, 167, 0.75) 0%, rgba(95, 192, 167, 0.65) 100%);
+        background: -webkit-linear-gradient(135deg, rgba(95, 192, 167, 0.75) 0%, rgba(95, 192, 167, 0.65) 100%);
+    }
+    80% {
+        background: rgba(77, 199, 236, 0.75);
+        background: linear-gradient(45deg, rgba(77, 199, 236, 0.75) 0%, rgba(77, 199, 236, 0.65) 100%);
+        background: -moz-linear-gradient(135deg, rgba(77, 199, 236, 0.75) 0%, rgba(77, 199, 236, 0.65) 100%);
+        background: -webkit-linear-gradient(135deg, rgba(77, 199, 236, 0.75) 0%, rgba(77, 199, 236, 0.65) 100%);
+    }
+}
+
+
